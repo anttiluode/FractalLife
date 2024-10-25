@@ -2,6 +2,8 @@
 
 A neural evolution simulation featuring organisms with fractal neural networks that learn and evolve through interaction.
 
+[video](https://youtu.be/lsQHUSh3ckA)
+
 ## Overview
 
 The Fractal Life Simulator creates a virtual environment where organisms with fractal neural networks interact, evolve, and learn. Each organism possesses:
