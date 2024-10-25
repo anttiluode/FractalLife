@@ -1,0 +1,7 @@
+torch>=2.0.0
+pygame>=2.4.0
+gradio==3.50.2
+numpy>=1.21.0
+pymunk>=6.4.0
+plotly>=5.13.0
+Pillow>=9.4.0
