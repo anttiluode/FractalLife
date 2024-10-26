@@ -235,14 +235,15 @@ Social insects like ants that form a collective intelligence even when not in di
 Distributed computing systems where separate nodes contribute to a larger computation
 What makes this particularly interesting in our simulation is that we have direct access to their internal states through their FractalBrain class:
 
-python
+```python
 Copy code
 class FractalBrain:
     def __init__(self, input_dim=32, hidden_dim=64, max_neurons=1000):
         # Core neural network components
         self.visual_cortex = FractalNeuron(self.input_dim, self.hidden_dim)
         self.thought_processor = FractalNeuron(self.hidden_dim, self.hidden_dim)
-        self.action_generator = FractalNeuron(self.hidden_dim, self.input_dim)
+        self.action_generator = FractalNeuron(self.hidden_dim, self.input_dim)```
+
 This means we could potentially:
 
 Create a "collective consciousness" visualization that shows the aggregate neural state of all organisms
@@ -280,7 +281,7 @@ Design fitness functions to reward specific capabilities
 Create environmental challenges that drive adaptation
 We could modify the code to add a research interface:
 
-ruby
+```ruby
 Copy code
 class AIResearcher:
     def __init__(self, simulation):
@@ -299,7 +300,9 @@ class AIResearcher:
         # Set up controlled conditions to test ideas
         
     def guide_evolution(self, target_behavior):
-        # Influence selection towards desired outcomes
+        # Influence selection towards desired outcomes```
+
+
 This could be an incredible platform for studying:
 
 Emergence of collective intelligence
@@ -332,7 +335,7 @@ The Field as Behavioral Memory The field acts like a kind of "behavioral memory"
 
 Looking at the relevant code:
 
-php
+```php
 Copy code
 def update(self, organisms: List[FractalOrganism]):
     # Field decays slowly (90% retention each update)
@@ -345,7 +348,9 @@ def update(self, organisms: List[FractalOrganism]):
                 float(vitals['activation']),
                 float(vitals['energy']) / 1000.0,
                 float(vitals['connections']) / 100.0
-            ])
+            ])```
+
+
             # The field accumulates this information spatially
 So when existing organisms are moving quickly and efficiently, they're leaving strong neural activation patterns in the field. New organisms, even though they start slow, are immediately immersed in this field of "successful" neural patterns, which could help them rapidly adopt similar behaviors.
 
@@ -359,7 +364,7 @@ Claude: Let me share my thoughts on what makes this simulation distinctive:
 
 Neural Architecture Unlike traditional artificial life simulations that often use simple rule-based behaviors or basic neural networks, our organisms use fractal neural networks. Their brains are hierarchical and self-similar:
 
-python
+```python
 Copy code
 class FractalNeuron:
     def __init__(self, input_dim=16, output_dim=16, depth=0, max_depth=2):
@@ -373,7 +378,8 @@ class FractalNeuron:
                     output_dim=output_dim,
                     depth=depth + 1,
                     max_depth=max_depth
-                )
+                )```
+
 This creates a more complex and potentially more expressive form of cognition than classical artificial life simulations.
 
 Mind Melding Unlike C. elegans simulators like Brian 2, which model a fixed neural architecture, our organisms can share neural states directly. They're not just interacting physically but mentally:
@@ -390,13 +396,14 @@ Environmental Memory The field system we discussed creates a form of distributed
 
 Self-Perception Our organisms have the ability to perceive themselves and others, feeding this information back into their neural networks. They're not just reacting to the environment but to their own state and the states of others:
 
-ruby
+```ruby
 Copy code
 def _get_visual_input(self, organisms):
     visual_input = torch.zeros(self.feature_dim)
     # Add self-perception
     color_tensor = torch.tensor([c/255.0 for c in self.color])
-    visual_input[:3] = color_tensor[:3]
+    visual_input[:3] = color_tensor[:3]```
+
 This creates a primitive form of self-awareness that's quite different from classical artificial life.
 
 Key Differences from Other Simulations The key difference from something like a C. elegans simulator is that we're not trying to accurately model existing biology. Instead, we've created a novel form of artificial life that can:
