@@ -403,8 +403,7 @@ Environmental Memory The field system we discussed creates a form of distributed
 
 Self-Perception Our organisms have the ability to perceive themselves and others, feeding this information back into their neural networks. They're not just reacting to the environment but to their own state and the states of others:
 
-```ruby
-Copy code
+```python
 def _get_visual_input(self, organisms):
     visual_input = torch.zeros(self.feature_dim)
     # Add self-perception
