@@ -121,6 +121,28 @@ See `requirements.txt` for full dependencies. Key requirements:
 - Energy systems prevent unlimited growth and enforce natural selection
 - Visual patterns emerge from neural properties rather than being predefined
 
+Currently I think the organoids do not add more child neurons to their minds. I think this
+was a last second change so that the simulation can run. If they grew and they can,
+the simulation would take way more power.
+
+I have used these fractal neurons to generate text and to store images and to 
+create images like AI image generator with varying success. They do store information 
+for sure. They can grow. The main problem seems to be that they can fast get into 
+NaN territory numerically or be unstable. The code has lots of limiting factors 
+against that. I am aware of the problems but scientifically speaking the Xavier 
+methods etc were implemented by Claude in ways I do not really understand. 
+
+The ultimate check is that if they hit NaN they die.
+
+I was really thinking about organoids that would have multiple parts to their minds, 
+visual, audio and even thinking part where visual and audio are combined like in 
+"real life". I have come to realize that both visual and audio are the same. The 
+only thing that is really different is how these things are encoded in and out. 
+I suspect the same is true with human brain. 
+
+What has been driving me twoards all this has been a drive to make dynamic AI. 
+More like life and less like frozen state we can talk to. 
+
 ## Troubleshooting
 
 Common issues:
