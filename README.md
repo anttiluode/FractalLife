@@ -196,15 +196,15 @@ Movement Evolution The movement evolution you've observed—from very slow initi
 
 InteractionField As for the InteractionField, I added this as a way to create persistent environmental memory and influence. Here's how it works:
 
-python
-Copy code
+```python
 class InteractionField:
     def __init__(self, width: int, height: int, resolution: int = 50):
         # Create a grid that overlays the simulation space
         self.grid_w = max(1, self.width // self.resolution)
         self.grid_h = max(1, self.height // self.resolution)
         # The field has 3 channels for different types of neural activity
-        self.field = np.zeros((self.grid_w, self.grid_h, 3))
+        self.field = np.zeros((self.grid_w, self.grid_h, 3))```
+
 The field acts like a kind of "pheromone trail" or "neural residue" in the environment:
 
 When organisms move through space, they leave traces of their neural activity in the field
