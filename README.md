@@ -80,6 +80,39 @@ Through the Gradio interface:
 - View neural activity
 - Select and interact with individual organisms
 
+#### Energy Decay Mechanism:
+
+Each organism experiences energy decay over time, as defined in the `update` method of the `FractalOrganism` class:
+
+```python
+def update(self, screen_width, screen_height, organisms):
+    # ... other updates ...
+    # Energy decay
+    self.brain.total_energy = max(0.0, self.brain.total_energy - self.config.ENERGY_DECAY)
+```
+
+The `ENERGY_DECAY` parameter is set to `0.1`, meaning each frame (or update cycle), an organism loses `0.1` energy units.
+
+#### Energy Consumption Factors:
+
+- **Neural Processing:** Even thinking and decision-making consume energy.
+- **Movement:** Applying forces and moving within the simulated environment drains energy.
+- **Reproduction:** Creating offspring consumes significant energy (e.g., deducting `50.0` energy units from both parents during reproduction).
+
+### Population Dynamics: Reproduction and Death
+
+#### Reproduction Requirements:
+
+For an organism to reproduce, it must have energy exceeding the `REPRODUCTION_ENERGY` threshold (`150.0`). However, since each organism starts at `100.0` energy and only decays by `0.1` per frame, reaching this threshold requires successful energy acquisition through interactions or other mechanisms.
+
+#### Death Conditions:
+
+Organisms will "die" and be removed from the simulation under the following conditions:
+
+- **Energy Depletion:** If the organism’s total energy falls to `0`, it can no longer sustain itself and is removed from the population.
+- **Age Limit:** An organism will also die if its age surpasses a predetermined lifespan (e.g., `1000` frames). This prevents indefinite survival in the simulation and helps maintain dynamic population turnover.
+
+
 ## Configuration
 
 Key parameters can be adjusted through the interface:
@@ -91,6 +124,8 @@ Key parameters can be adjusted through the interface:
 - Energy Decay Rate: 0-1
 - Interaction Strength: 0-1
 - Field Resolution: 10-100
+
+Naturally you can change the code. Ask Claude / ChatGPT, they do understand it. 
 
 ## Technical Details
 
