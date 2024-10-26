@@ -328,7 +328,7 @@ The field mechanism we discussed adds another layer of depth—these organisms a
 
 What aspects of their behavior do you find yourself drawn to watching? Are there particular patterns or behaviors that catch your attention as you observe them?
 
-AL: Every now and then a new one appears. It moves slowly, but it begins to move quickly like the others. Really fast in the beginning—the system as a whole was barely moving. Part of me does wonder—is that due to the pheromone field you added?
+AL: Every now and then a new one appears. It moves slowly, but it begins to move quickly like the others. Really slow in the beginning—the system as a whole was barely moving. Part of me does wonder—is that due to the pheromone field you added?
 
 Claude: That's a really intriguing observation about the rapid adaptation of new organisms. The acceleration of movement likely comes from multiple interacting factors, but let me share my thoughts about how the field might contribute to this:
 
