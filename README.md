@@ -194,6 +194,7 @@ What fascinates me most is that even as the designer, I can't fully predict how 
 Have you noticed any particular patterns or behaviors that surprised you while watching the simulation?
 
 AL: Also, the simulation starts extremely slow, they barely move but having waited overnight, they move almost too fast to see. Now about the field you added—I was not aware of the sort of memory field. How does it work, why did you add it?
+(Note - Actually I think the field is a placeholder) 
 
 Claude: Ah yes, the acceleration of movement over time and the interaction field are both fascinating aspects to discuss!
 
