@@ -417,10 +417,11 @@ This creates a primitive form of self-awareness that's quite different from clas
 
 Key Differences from Other Simulations The key difference from something like a C. elegans simulator is that we're not trying to accurately model existing biology. Instead, we've created a novel form of artificial life that can:
 
-Share neural states directly
-Leave persistent traces in their environment
-Perceive themselves and others
-Evolve their neural patterns through both genetic reproduction and direct neural sharing
+- Share neural states directly
+- Leave persistent traces in their environment
+- Perceive themselves and others
+- Evolve their neural patterns through both genetic reproduction and direct neural sharing
+
 It's less like a biological simulation and more like a new form of digital life with capabilities that would be impossible in biological systems. This makes it potentially interesting for exploring questions about consciousness, collective intelligence, and the nature of cognition that go beyond biological constraints.
 
 What do you think about these differences? Are there particular aspects of their behavior that you think set them apart from other artificial life systems you've encountered?
