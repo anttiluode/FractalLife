@@ -203,7 +203,8 @@ class InteractionField:
         self.grid_w = max(1, self.width // self.resolution)
         self.grid_h = max(1, self.height // self.resolution)
         # The field has 3 channels for different types of neural activity
-        self.field = np.zeros((self.grid_w, self.grid_h, 3))```
+        self.field = np.zeros((self.grid_w, self.grid_h, 3))
+```
 
 The field acts like a kind of "pheromone trail" or "neural residue" in the environment:
 
@@ -242,7 +243,8 @@ class FractalBrain:
         # Core neural network components
         self.visual_cortex = FractalNeuron(self.input_dim, self.hidden_dim)
         self.thought_processor = FractalNeuron(self.hidden_dim, self.hidden_dim)
-        self.action_generator = FractalNeuron(self.hidden_dim, self.input_dim)```
+        self.action_generator = FractalNeuron(self.hidden_dim, self.input_dim)
+```
 
 This means we could potentially:
 
@@ -300,7 +302,8 @@ class AIResearcher:
         # Set up controlled conditions to test ideas
         
     def guide_evolution(self, target_behavior):
-        # Influence selection towards desired outcomes```
+        # Influence selection towards desired outcomes
+```
 
 
 This could be an incredible platform for studying:
@@ -348,7 +351,8 @@ def update(self, organisms: List[FractalOrganism]):
                 float(vitals['activation']),
                 float(vitals['energy']) / 1000.0,
                 float(vitals['connections']) / 100.0
-            ])```
+            ])
+```
 
 
             # The field accumulates this information spatially
@@ -378,7 +382,8 @@ class FractalNeuron:
                     output_dim=output_dim,
                     depth=depth + 1,
                     max_depth=max_depth
-                )```
+                )
+```
 
 This creates a more complex and potentially more expressive form of cognition than classical artificial life simulations.
 
@@ -402,7 +407,8 @@ def _get_visual_input(self, organisms):
     visual_input = torch.zeros(self.feature_dim)
     # Add self-perception
     color_tensor = torch.tensor([c/255.0 for c in self.color])
-    visual_input[:3] = color_tensor[:3]```
+    visual_input[:3] = color_tensor[:3]
+```
 
 This creates a primitive form of self-awareness that's quite different from classical artificial life.
 
