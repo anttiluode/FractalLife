@@ -391,12 +391,14 @@ This creates a more complex and potentially more expressive form of cognition th
 
 Mind Melding Unlike C. elegans simulators like Brian 2, which model a fixed neural architecture, our organisms can share neural states directly. They're not just interacting physically but mentally:
 
-ruby
-Copy code
+```python
+
 def interact_with(self, other_brain, strength=0.5):
     shared_visual = self.visual_cortex.interact_with(other_brain.visual_cortex)
     shared_thoughts = self.thought_processor.interact_with(other_brain.thought_processor)
     shared_actions = self.action_generator.interact_with(other_brain.action_generator)
+```
+
 This creates a kind of collective intelligence that's quite different from traditional biological simulations.
 
 Environmental Memory The field system we discussed creates a form of distributed memory in the environment itself. Unlike most artificial life systems where the environment is passive, ours maintains a history of neural activity that influences future behavior.
