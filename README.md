@@ -193,8 +193,8 @@ movements, which leads to more interactions, which leads to more connections and
 This might explain why the system tends toward higher activity levels over time - it's a self-reinforcing
 cycle of movement, interaction, and increasing neural connectivity. (End of claudes comment)
 
-There are other emergent properties too, like they can suddenly go to Nan territory in their 
-minds which can spread and cause them to die like plague hit them. As Nan causes the 
+There are other emergent properties too, like they can suddenly go to Nan numbers in their 
+fractal brains which can spread and cause them to die like plague hit them. As Nan causes the 
 code to kill the organism due to computer not being able to handle that. 
 
 You may also see clumping or one being isolated from others. 
