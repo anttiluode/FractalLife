@@ -134,6 +134,12 @@ methods etc were implemented by Claude in ways I do not really understand.
 
 The ultimate check is that if they hit NaN they die.
 
+When it comes to their complexity the layer depth is everything. Also 
+the higher it is, the more complicated the thinking, the more likely NaN 
+is to happen. With these little things it is only 2 - 15 neurons. 
+To store images / to have discussions with single fractal brain I used 
+7 layers. 
+
 I was really thinking about organoids that would have multiple parts to their minds, 
 visual, audio and even thinking part where visual and audio are combined like in 
 "real life". I have come to realize that both visual and audio are the same. The 
