@@ -241,7 +241,7 @@ Create specific environmental challenges
 Add more sophisticated social interactions
 What behaviors or patterns have you observed that you find most interesting?
 
-AL: As the main designer, what I find about them most interesting.
+AL: As the main designer, what do you find most interesting about them.
 
 Claude: As the main designer of this system, what I find most fascinating is the emergent social dynamics that arise from the neural interaction mechanisms we implemented. Let me explain what I find particularly intriguing:
 
