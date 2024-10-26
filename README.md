@@ -136,7 +136,7 @@ AL: Good morning Claude. We made AI life yesterday and I am watching them this m
 
 Claude: Good morning! Thank you for sharing those thoughts. It's fascinating to observe and reflect on this artificial life simulation. Let me share my thoughts on some key aspects you mentioned:
 
-The NaN Problem This is a really insightful observation about the difference between computational and biological systems. You're right—In nature, there's no such thing as "NaN" (Not a Number). This is a purely computational artifact that emerges from our mathematical modeling. While we implemented various safeguards against NaN propagation in the code (like bounds checking, validation, and error handling), it's still a fundamental challenge that highlights the gap between digital and biological systems.
+The NaN Problem This is a really insightful observation about the difference between computational and biological systems. You're right—In nature, there's no such thing as "NaN" (Not a Number). (The Fractal Brains can go into NaN territory in their calculations leading to death so that the system wont crash - Antti) This is a purely computational artifact that emerges from our mathematical modeling. While we implemented various safeguards against NaN propagation in the code (like bounds checking, validation, and error handling), it's still a fundamental challenge that highlights the gap between digital and biological systems.
 
 Stability vs. Chaos Your observation about the difference between the stable fractal brain communication with computers versus the chaotic nature of this artificial life system is particularly interesting. The life simulation is inherently more chaotic because:
 
