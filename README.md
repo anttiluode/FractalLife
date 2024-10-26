@@ -6,8 +6,8 @@ A neural evolution simulation featuring organisms with fractal neural networks t
 
 (Notice, life in the system starts to move very slowly, then faster)
 
-Do read the discussion below licence I had with Claude about it this morning when observing the life after leaving my computer 
-run the simulation overnight (See the video above) 
+Do read the discussion below licence I had with Claude about it this morning when observing the life - after leaving my computer 
+run the simulation overnight. (See the video above) 
 
 ## Overview
 
