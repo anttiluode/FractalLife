@@ -134,12 +134,6 @@ methods etc were implemented by Claude in ways I do not really understand.
 
 The ultimate check is that if they hit NaN they die.
 
-When it comes to their complexity the layer depth is everything. Also 
-the higher it is, the more complicated the thinking, the more likely NaN 
-is to happen. With these little things it is only 2 - 15 neurons. 
-To store images / to have discussions with single fractal brain I used 
-7 layers. 
-
 I was really thinking about organoids that would have multiple parts to their minds, 
 visual, audio and even thinking part where visual and audio are combined like in 
 "real life". I have come to realize that both visual and audio are the same. The 
@@ -148,6 +142,62 @@ I suspect the same is true with human brain.
 
 What has been driving me twoards all this has been a drive to make dynamic AI. 
 More like life and less like frozen state we can talk to. 
+
+## Emergent properties 
+
+While the simulation often starts slow. It can suddenly start going through 
+wild fluctuations. The connection amounts explode (organoids "mindmelding")
+and they start to move super fast. 
+
+Per Claude: 
+
+Yes, that neural activity spike pattern is fascinating! Looking at the code, this increase 
+in neural connections happens because every time organisms interact, their connection counts increase:
+
+```python
+def interact_with(self, other_neuron, strength=0.5):
+    # Share neural states with bounds
+    shared_activation = (self.state.activation + other_neuron.state.activation) / 2
+    
+    # Connection counter increases with each interaction
+    max_connections = 100  # Connection cap
+    self.state.connections = min(self.state.connections + 1, max_connections)
+    other_neuron.state.connections = min(other_neuron.state.connections + 1, max_connections)
+```
+
+As they move faster, they:
+
+Encounter more organisms
+Have more interactions per unit time
+Build up more connections
+Share more neural states
+This leads to higher average activation levels
+It's like a social network effect - as they move more, they "meet" more other organisms, 
+leading to more connections, which affects their behavior, often making them even more active.
+This creates a kind of feedback loop:
+
+```python
+def _apply_action_forces(self, actions):
+    # Movement is influenced by neural activation
+    activation = float(self.brain.visual_cortex.state.activation)
+    force_scale = 20.0
+    
+    # Convert actions to directional movement
+    force_x = float(actions[0].item()) * force_scale * (1 + abs(activation))
+    force_y = float(actions[1].item()) * force_scale * (1 + abs(activation))
+```
+
+Notice how the force scale is multiplied by (1 + abs(activation)) - higher activation leads to stronger 
+movements, which leads to more interactions, which leads to more connections and potentially higher activation...
+
+This might explain why the system tends toward higher activity levels over time - it's a self-reinforcing
+cycle of movement, interaction, and increasing neural connectivity. (End of claudes comment)
+
+There are other emergent properties too, like they can suddenly go to Nan territory in their 
+minds which can spread and cause them to die like plague hit them. As Nan causes the 
+code to kill the organism due to computer not being able to handle that. 
+
+You may also see clumping or one being isolated from others. 
 
 ## Troubleshooting
 
