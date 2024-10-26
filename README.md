@@ -2,7 +2,9 @@
 
 A neural evolution simulation featuring organisms with fractal neural networks that learn and evolve through interaction.
 
-[video](https://youtu.be/lsQHUSh3ckA)
+[video](https://www.youtube.com/live/shALyP_EQsQ)
+
+(Notice, life in the system starts to move very slowly, then faster)
 
 ## Overview
 
